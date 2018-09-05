@@ -1,4 +1,4 @@
-function isArmStrongNumber(num){
+function validate(num){
     const pwr = num.toString().length;
     const armStrongNumber = num
     .toString()
@@ -8,4 +8,4 @@ function isArmStrongNumber(num){
     return (armStrongNumber === num)
 }
 
-isArmStrongNumber(9)//?
+module.exports = validate;
