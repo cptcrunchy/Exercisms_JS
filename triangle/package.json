@@ -64,7 +64,7 @@
     }
   },
   "licenses": [
-    "MIT"
+    {"type": "MIT"}
   ],
   "dependencies": {}
 }
