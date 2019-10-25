@@ -12,8 +12,7 @@ function toRna(dna) {
         }else{
            return rna + rnaTypes[nucleotide]
         }
-    }, "")
-    
+    }, "")    
 }
 
 

@@ -63,9 +63,9 @@
         "import/extensions": "off"
       }
     },
-    "licenses": [
-      "MIT"
-    ],
+    "licenses": [{
+        "MIT": "MIT"
+    }],
     "dependencies": {}
   }
   
