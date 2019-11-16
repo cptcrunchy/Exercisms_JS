@@ -8,23 +8,17 @@ output: "looc"
 
 ## Setup
 
-Go through the setup instructions for ECMAScript to
-install the necessary dependencies:
+Go through the setup instructions for Javascript to install the necessary
+dependencies:
 
-[http://exercism.io/languages/ecmascript](http://exercism.io/languages/ecmascript)
+[https://exercism.io/tracks/javascript/installation](https://exercism.io/tracks/javascript/installation)
 
 ## Requirements
 
 Install assignment dependencies:
 
 ```bash
-npm install
-```
-
-OR
-
-```bash
-yarn
+$ npm install
 ```
 
 ## Making the test suite pass
@@ -32,19 +26,13 @@ yarn
 Execute the tests with:
 
 ```bash
-npm test
-```
-
-OR
-
-```bash
-yarn test
+$ npm test
 ```
 
 In the test suites all tests but the first have been skipped.
 
-Once you get a test passing, you can enable the next one by
-changing `xtest` to `test`.
+Once you get a test passing, you can enable the next one by changing `xtest` to
+`test`.
 
 ## Source
 
@@ -52,4 +40,5 @@ Introductory challenge to reverse an input string [https://medium.freecodecamp.o
 
 ## Submitting Incomplete Solutions
 
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
+It's possible to submit an incomplete solution so you can see how others have
+completed the exercise.
