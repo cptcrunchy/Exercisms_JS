@@ -1,71 +1,80 @@
 {
-    "name": "xecmascript",
-    "version": "0.0.0",
-    "description": "Exercism exercises in ECMAScript 6.",
-    "author": "Katrina Owen",
-    "private": true,
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/exercism/xecmascript"
-    },
-    "devDependencies": {
-      "babel-jest": "^21.2.0",
-      "babel-plugin-transform-builtin-extend": "^1.1.2",
-      "babel-preset-env": "^1.4.0",
-      "eslint": "^3.19.0",
-      "eslint-config-airbnb": "^15.0.1",
-      "eslint-plugin-import": "^2.2.0",
-      "eslint-plugin-jsx-a11y": "^5.0.1",
-      "eslint-plugin-react": "^7.0.1",
-      "jest": "^21.2.1"
-    },
-    "jest": {
-      "modulePathIgnorePatterns": [
-        "package.json"
+  "name": "xecmascript",
+  "version": "0.0.0",
+  "description": "Exercism exercises in ECMAScript 6.",
+  "author": "Katrina Owen",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/exercism/xecmascript"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.9.0",
+    "babel-plugin-transform-builtin-extend": "^1.1.2",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "package.json"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": [
+            {
+              "node": "current"
+            }
+          ]
+        }
       ]
-    },
-    "babel": {
-      "presets": [["env",{"targets":[{"node": "current"}]}]
+    ],
+    "plugins": [
+      [
+        "babel-plugin-transform-builtin-extend",
+        {
+          "globals": [
+            "Error"
+          ]
+        }
       ],
-      "plugins": [
-        [
-          "babel-plugin-transform-builtin-extend",
-          {
-            "globals": [
-              "Error"
-            ]
-          }
-        ],
-        [
-          "transform-regenerator"
-        ]
+      [
+        "transform-regenerator"
       ]
+    ]
+  },
+  "scripts": {
+    "test": "jest --no-cache ./*",
+    "watch": "jest --no-cache --watch ./*",
+    "lint": "eslint .",
+    "lint-test": "eslint . && jest --no-cache ./* "
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
     },
-    "scripts": {
-      "test": "jest --no-cache ./*",
-      "watch": "jest --no-cache --watch ./*",
-      "lint": "eslint .",
-      "lint-test": "eslint . && jest --no-cache ./* "
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest": true
     },
-    "eslintConfig": {
-      "parserOptions": {
-        "ecmaVersion": 6,
-        "sourceType": "module"
-      },
-      "env": {
-        "es6": true,
-        "node": true,
-        "jest": true
-      },
-      "extends": "airbnb",
-      "rules": {
-        "import/no-unresolved": "off",
-        "import/extensions": "off"
-      }
-    },
-    "licenses": [{
-        "MIT": "MIT"
-    }],
-    "dependencies": {}
-  }
-  
+    "extends": "airbnb",
+    "rules": {
+      "import/no-unresolved": "off",
+      "import/extensions": "off"
+    }
+  },
+  "licenses": [
+    "MIT"
+  ],
+  "dependencies": {}
+}
